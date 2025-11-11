@@ -1,0 +1,52 @@
+.counter,
+.counterHook{
+    border-radius: 8px;
+    border: 2px solid;
+    padding: 20px;
+    font-family: inherit;
+    text-align: center;
+    width: 240px;
+    transition: all 0.3s ease;
+}
+
+.counterHook {
+    border-color: #e5698a;
+}
+
+.counter:hover,
+.counterHook:hover{
+    transform: scale(1.03);
+}
+
+.value{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #646cff;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #535bf2;
+    transform: translateY(-2px);
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+

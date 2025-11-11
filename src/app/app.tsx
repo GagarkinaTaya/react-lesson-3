@@ -1,4 +1,9 @@
 import { ThemeProvider, ThemeToggle } from '../modules/theme'
+import {
+    CounterProvider,
+    CounterWithContext,
+    CounterWithHook,
+} from '../modules/counter'
 import styles from './app.module.css'
 
 function MainPage() {
@@ -24,6 +29,20 @@ function MainPage() {
                         она сохранялась после перезагрузки страницы.
                     </li>
                 </ul>
+            </div>
+
+            <div className={styles.countersWrapper}>
+                <CounterProvider>
+                    <div className={styles.counterGroup}>
+                        <CounterWithContext />
+                        <CounterWithContext />
+                    </div>
+                </CounterProvider>
+
+                <div className={styles.counterGroup}>
+                    <CounterWithHook />
+                    <CounterWithHook />
+                </div>
             </div>
         </div>
     )
